@@ -1,5 +1,3 @@
-# phenocam_rename
-
 # Pheno Batch Rename for CSU East Bay's PhenoCam Project
 
 
