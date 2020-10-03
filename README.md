@@ -44,7 +44,7 @@ Both Windows10 and Linux systems are supported but given the ease of setup, Linu
 
 7. Download the files from this repository.
 
-### Linux ***DRAFT ONLY***:
+### Linux:
 
 1. Download / Install the rename utility. For example if using Ubuntu or other debian based linux
 > `sudo apt install rename`
