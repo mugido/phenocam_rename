@@ -60,13 +60,17 @@ Both Windows10 and Linux systems are supported but given the ease of setup, Linu
 
 **Make sure you have a backup of the data before you rename it.**
 
-1. Launch the application and set the proper values for the batch you are renaming. (Select the folder containing the photos, the location of the phenocam, and the scheme. *Choose the "scheme" that corresponds to your Operating System.*)  
+1. Launch the application. 
+    * In Windows, double click the gui_for_rename.py file. 
+    * In linux, use the command `python3 gui_for_rename.py` to launch the application.
+        * *note you must run the command from within the folder containing the script or include the path in the command. i.e. `python3            ~/path_to_file/gui_for_rename.py`*
 
+2. Select the folder containing the photos, the location of the phenocam, and the scheme. *Choose the "scheme" that corresponds to your Operating System.*  
 
-2. When all values have been assigned, click the "Confirm Settings" button; this will unlock the "Rename" button.  
+3. When all values have been assigned, click the "Confirm Settings" button; this will unlock the "Rename" button.  
 
-3. Press the "Rename" button to begin the process. It should only take a few seconds to complete.
+4. Press the "Rename" button to begin the process. It should only take a few seconds to complete.
 
-4. You should see a message that says its completed successfully. Confirm that all the files are renamed before closing the application.
+5. You should see a message that says its completed successfully. Confirm that all the files are renamed before closing the application.
 
 *After renaming files, the selected folder and location values are reset to help prevent mistakes if multiple folders are being worked on in a single sitting.*
