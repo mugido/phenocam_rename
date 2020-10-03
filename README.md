@@ -58,15 +58,15 @@ Both Windows10 and Linux systems are supported but given the ease of setup, Linu
 
 ## Execution
 
-1. **Make sure you have a backup of the data before you rename it.**
+**Make sure you have a backup of the data before you rename it.**
 
-2. Launch the application and set the proper values for the batch you are renaming. (Select the folder containing the photos, the location of the phenocam, and the scheme. *Choose the "scheme" that corresponds to your Operating System.*)  
+1. Launch the application and set the proper values for the batch you are renaming. (Select the folder containing the photos, the location of the phenocam, and the scheme. *Choose the "scheme" that corresponds to your Operating System.*)  
 
 
-3. When all values have been assigned, click the "Confirm Settings" button; this will unlock the "Rename" button.  
+2. When all values have been assigned, click the "Confirm Settings" button; this will unlock the "Rename" button.  
 
-4. Press the "Rename" button to begin the process. It should only take a few seconds to complete.
+3. Press the "Rename" button to begin the process. It should only take a few seconds to complete.
 
-5. You should see a message that says its completed successfully. Confirm that all the files are renamed before closing the application.
+4. You should see a message that says its completed successfully. Confirm that all the files are renamed before closing the application.
 
 *After renaming files, the selected folder and location values are reset to help prevent mistakes if multiple folders are being worked on in a single sitting.*
