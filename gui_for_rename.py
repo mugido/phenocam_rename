@@ -55,15 +55,15 @@ setup_buttons.config(bg = "gray50")
 other_buttons.config(bg = "gray50")
 
 locationList = [
-    "Location to Prepend",
+    "Location",
     "Concord",
-    "Hayward"
+    "EdenLanding"
 ]
 
 schemeList = [
-    "Scheme to Change",
-    "Hyphens (Windows)",
-    "Colons (Linux)"
+    "OS",
+    "Windows",
+    "Linux"
 ]
 
 
