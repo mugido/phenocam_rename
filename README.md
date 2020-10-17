@@ -29,7 +29,7 @@ Both Windows10 and Linux systems are supported but given the ease of setup, Linu
     
 2. Restart your computer.
 
-3. Open the Microsoft Store app and search for / install Ubuntu
+3. Open the Microsoft Store app and search for and install Ubuntu
 > * There are a few versions of Ubuntu on the Microsoft Store; *at the time of writing* the prefered version is the one simply titled Ubuntu
 
 4. Launch Ubuntu and follow the prompts to create your account (username and password). *The first time launching Ubuntu could take a few minutes*
@@ -44,10 +44,10 @@ Both Windows10 and Linux systems are supported but given the ease of setup, Linu
 
 ### Linux:
 
-1. Download / Install the rename utility. For example if using Ubuntu or other debian based linux
+1. Download and Install the rename utility. For example if using Ubuntu or other debian based linux
 > `sudo apt install rename`
 
-2. Download / install Python3. For example if using Ubuntu or other debian based linux
+2. Download and install Python3. For example if using Ubuntu or other debian based linux
 > `sudo apt install python3`
 
 3. Download the files from this repository.
