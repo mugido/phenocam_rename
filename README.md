@@ -63,7 +63,8 @@ Both Windows10 and Linux systems are supported but given the ease of setup, Linu
     * In linux, use the command `python3 gui_for_rename.py` to launch the application.
         * *note you must run the command from within the folder containing the script or include the path in the command. i.e. `python3            ~/path_to_file/gui_for_rename.py`*
 
-2. Select the folder containing the photos, the location of the phenocam, and the scheme. *Choose the "scheme" that corresponds to your Operating System.*  
+2. Select the folder containing the photos and the location of the phenocam. 
+    * You should also see a button that says the name of your operating system. If it is blank, simply click the button and choose your OS.  
 
 3. When all values have been assigned, click the "Confirm Settings" button; this will unlock the "Rename" button.  
 
