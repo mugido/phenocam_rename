@@ -1,12 +1,13 @@
 from tkinter import * 
 from tkinter import filedialog
 import shell_commands as sc
+import platform
 
 
 # Selects the folder which contains all the photos that are to be renamed
 def getFolder():
     global folder_path
-    folder_path = filedialog.askdirectory(initialdir = "/")
+    folder_path = filedialog.askdirectory(initialdir = "~/")
     if folder_path != "":
         label_preview.configure(text="All .jpg files in "+folder_path+" will be renamed")
 
@@ -30,7 +31,7 @@ def renameFiles():
         location.set(locationList[0])
         folder_path = ""
         label_preview.configure(text="All .jpg files in the _____ folder will be renamed")
-        label_error.configure(text=result, fg = "yellow")
+        label_error.configure(text=result, fg = "green")
     else:
         button_rename['state'] = DISABLED
         label_error.configure(text="ERROR: One or more settings has been changed to an invalid selection")
@@ -38,9 +39,12 @@ def renameFiles():
 
 # Everything bellow, aside from the variables, are GUI settings
 window = Tk()
+bgColor = "gray20"
+txtColor = "gray80"
+
 
 window.title("CSU East Bay - Batch Rename")
-window.geometry("700x260")
+window.geometry("850x260")
 window.config(background = "gray50")
 
 header = Frame(window)
@@ -71,26 +75,27 @@ location = StringVar()
 scheme = StringVar()
 folder_path = ""
 location.set(locationList[0])
-scheme.set(schemeList[0])
+#Set scheme to current Operating System
+scheme.set(platform.system())
 
 
 label_file_explorer = Label(header,  
                             text = "Batch Rename for PhenoCam", 
                             width = 100, height = 2, 
-                            fg = "blue",
-                            bg = "gray50") 
+                            fg = txtColor,
+                            bg = bgColor)
 
 label_preview = Label(header,  
                             text = "All .jpg files in the _____ folder will be renamed",
                             width = 100, height = 2,  
-                            fg = "blue",
-                            bg = "gray50")
+                            fg = txtColor,
+                            bg = bgColor)
 
 label_error = Label(header,  
                             text = "",
                             width = 100, height = 2,  
                             fg = "red3",
-                            bg = "gray50")  
+                            bg = bgColor)  
 
 
 button_explore = Button(setup_buttons,  
@@ -123,21 +128,21 @@ button_rename = Button(other_buttons,
 label_credits = Label(other_buttons,
                             text = "Created for the PhenoCam project at CSU East Bay by Sean Dixon",
                             width = 100, height = 1,
-                            fg = "blue",
-                            bg = "gray50")
+                            fg = txtColor,
+                            bg = bgColor)
 
 
-label_preview.grid(column = 1, row = 1, pady = (10,0))
+label_preview.grid(column = 1, row = 1, pady = (30,0), padx = (75,0))
 label_error.grid(column = 1, row = 2)
 
 
-button_explore.grid(column = 1, row = 1, padx=(125,0))
+button_explore.grid(column = 1, row = 1, padx=(150,0))
 scheme_option.grid(column = 3, row = 1)
 location_option.grid(column = 2, row = 1, padx = 20)
 
-button_confirm.grid(column = 1, row = 1, padx = 310, pady = (25, 5))   
-button_rename.grid(column = 1, row = 2, padx = 310, pady = 5)   
+button_confirm.grid(column = 1, row = 1, padx = 385, pady = (25, 5))   
+button_rename.grid(column = 1, row = 2, padx = 385, pady = 5)   
 
-label_credits.grid(column = 1, row = 8)
+label_credits.grid(column = 1, row = 8, pady = (20,20))
 
 window.mainloop()
