@@ -54,9 +54,9 @@ other_buttons = Frame(window)
 header.pack(side="top", fill="both", expand=True)
 setup_buttons.pack(fill="both", expand=True)
 other_buttons.pack(fill="both", expand=True)
-header.config(bg = "gray50")
-setup_buttons.config(bg = "gray50")
-other_buttons.config(bg = "gray50")
+header.config(bg = bgColor)
+setup_buttons.config(bg = bgColor)
+other_buttons.config(bg = bgColor)
 
 locationList = [
     "Location",
