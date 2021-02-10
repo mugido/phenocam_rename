@@ -18,7 +18,7 @@ def confirmSettings():
         button_rename['state'] = NORMAL
         label_error.configure(text="")
     else:
-        label_error.configure(text="ERROR: One or more settings has not been set to a valid selection")
+        label_error.configure(text="ERROR: One or more settings has not been set to a valid selection", fg="red3")
 
 # Checks that proper values are still assigned before beginning the renaming process
 # Resets values to their defaults (the Scheme setting remains because it is operating system dependent)
@@ -34,7 +34,7 @@ def renameFiles():
         label_error.configure(text=result, fg = "green")
     else:
         button_rename['state'] = DISABLED
-        label_error.configure(text="ERROR: One or more settings has been changed to an invalid selection")
+        label_error.configure(text="ERROR: One or more settings has been changed to an invalid selection", fg="red3")
 
 
 # Everything bellow, aside from the variables, are GUI settings
