@@ -65,6 +65,7 @@ locationList = [
 ]
 
 schemeList = [
+    "OS",
     "Windows",
     "Linux"
 ]
